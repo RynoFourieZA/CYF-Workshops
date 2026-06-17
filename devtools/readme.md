@@ -1,11 +1,10 @@
 # Inspector Gadget
 
-### Prep
+## Prep
 
 For this workshop you will need:
 
 - [ ] [Chrome](https://www.google.com/intl/en_uk/chrome/) with Devtools
-- [ ] A [ChatGPT account](https://chat.openai.com/auth/login)
 - [ ] This [Devtools Workshop page](http://cyf-workshop.netlify.app/devtools/)
 - [ ] Someone to keep track of the timer for each activity
 
@@ -53,9 +52,9 @@ So we've seen that fonts, colors, and spacing are often stored as CSS Variables,
 4. Try changing the values of these variables and see how it affects the page.
 5. Some questions to answer. (Make a prediction about what you think will happen first, and then test it)
 
-- What will happen when you click the value of `--finger` and press `up arrow` ten times?
-- What will happen when you delete the _value_ of `--copy`
-- What will happen when you change the _value_ of `--space` to `red`?
+    - What will happen when you click the value of `--finger` and press `up arrow` ten times?
+    - What will happen when you delete the _value_ of `--copy`
+    - What will happen when you change the _value_ of `--space` to `red`?
 
 ### Reflection
 
@@ -82,7 +81,7 @@ Next, let's see how the page layout is handled. Modern websites use the CSS Grid
 
 <!-- {{</note>}}-->
 
-### Lighthouse
+## Lighthouse
 
 ```objectives
 - [ ] Run a Lighthouse audit
@@ -106,18 +105,17 @@ It's important that software works and that people can use it. Lighthouse can he
 
 ```objectives
 - [ ] Find the MDN docs links in the Styles panel
-- [ ] Ask ChatGPT to explain the Devtools explanation
 ```
 
 In fact Devtools is a great teacher. In the Styles panel, hover over any CSS property to get a quick definition of that property. Click 'Learn More' to go straight to the MDN page for that property.
 
-If the explanation doesn't make sense to you, ask ChatGPT (a generative AI) to explain it further.
+If the explanation doesn't make sense to you, have a discussion within your group and experiment changing it to figure out what it means.
 
 <!-- {{<note type="warning" title="Plausible Hallucinations">}}-->
 
-Remember: Generative AIs are regularly **confidently wrong**; it can be helpful, but never trust it over Devtools.
+Remember: Generative AIs are regularly **confidently wrong**; it can be helpful, but never trust it over official documentation.
 
-If something doesn't make sense, or seems confusing or maybe wrong, it's better to ask friendly humans in Slack.
+If something doesn't make sense, or seems confusing or maybe wrong, it's better to ask friendly humans in Slack or in class.
 
 <!-- {{</note>}}-->
 
@@ -126,14 +124,8 @@ If something doesn't make sense, or seems confusing or maybe wrong, it's better 
 1. Set a [timer for 10 minutes](https://www.google.com/search?q=timer+for+10+minutes).
 1. Select `<main>` in the Elements panel
 1. Hover over the [ruleset](https://www.codecademy.com/learn/intro-to-css/modules/learn-css-selectors-visual-rules/cheatsheet) attached to main in the Styles panel.
-1. Copy the Devtools explanation and ask ChatGPT to explain it, like this:
-<details><summary>Please explain this to me like I'm a beginner learning HTML and CSS.</summary>
-
-> Determine a grid item's size and location within the grid by contributing a line, a span, or nothing (automatic) to its grid placement. Shorthand for 'grid-row-start', 'grid-column-start', 'grid-row-end', and 'grid-column-end'.
-
-</details>
-
-5. Come back together as a large group.
+1. In yoour goup, discuss what you think the rules mean. Refer to documentation or experiment if you need hints.
+1. Come back together as a large group.
 <!-- {{</note>}}-->
 
 ### Reflect
@@ -153,7 +145,7 @@ If something doesn't make sense, or seems confusing or maybe wrong, it's better 
 - [ ] Inspect the Accessibility Tree and compare it to the DOM
 ```
 
-So we've explored the Elements panel, the Styles panel, and the Lighthouse panel. There are many many more panels, and they all expose a different way of interpreting, interacting with, or understanding the same code. Computer systems frequently do this. It's a mistake to think that the way you use a website is the only way it can be used. Bots, crawlers, screenreaders, integrations...there are many and various consumers of your code, so it's important to make sure you construct it properly.
+So we've explored the Elements panel, the Styles panel, and the Lighthouse panel. There are many many more panels, and they all expose a different way of interpreting, interacting with, or understanding the same code. Computer systems frequently do this. It's a mistake to think that the way you use a website is the only way it can be used. Bots, crawlers, screenreaders, integrations... there are many and various consumers of your code, so it's important to make sure you construct it properly.
 
 For example, you have just looked in the Elements panel. This is not really your HTML, this is [the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), an API the browser builds using your HTML. An example of how the DOM is different from HTML is that JavaScript can change what's in the page - this changes the DOM, but doesn't change the actual HTML. The [DOM isn't the only API](https://developer.mozilla.org/en-US/docs/Web/API) it builds. Let's look at another one right now!
 
@@ -174,6 +166,6 @@ And that's it for today! We have covered a lot, but remember, as developers, we 
 
 1. Inspect web pages as you use the internet. Do this _all the time_! What font does Youtube use? What about [CSS Tricks](https://css-tricks.com/tag/devtools/)? [Hackernews](https://news.ycombinator.com/) is still using tables - what's wrong with this?
 
-2. Try changing the style and content of some websites. Make your favourite website bright pink. Make the BBC News page tell people about something great you did. Send a screenshot of something cool you changed to your cohort's Slack channel.
+2. Try changing the style and content of some websites. Make your favourite website bright pink. Try adding a `contenteditable` attribute to an element and see what changes. Send a screenshot of something cool you changed to your cohort's Slack channel.
 
-3. There are crash courses in Devtools all over [YouTube](https://www.youtube.com/watch?v=gTVpBbFWry8) and Udemy etc. Find a useful tip and share it in your class channel.
+3. There are crash courses in Devtools all over [YouTube](https://www.youtube.com/watch?v=gTVpBbFWry8) and Udemy. Find a useful tip and share it in your class channel.
