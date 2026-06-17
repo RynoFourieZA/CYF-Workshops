@@ -42,7 +42,7 @@ Take it in turns to swap the driver for each section of this workshop
 1.  When the timer goes off, share your answers with the other groups. Paste them in a thread in Slack and go quickly to the next challenge.
 <!-- {{</note>}}-->
 
-So we've seen that fonts, colors, and spacing are often stored as CSS Variables, or custom properties. This allows them to be easily changed throughout a project by simply altering one value. Let's experiment with this.
+So we've seen that fonts, colours, and spacing are often stored as CSS Variables, or custom properties. This allows them to be easily changed throughout a project by simply altering one value. Let's experiment with this.
 
 <!-- {{<note type="exercise" title="Experiment">}}-->
 
@@ -124,7 +124,7 @@ If something doesn't make sense, or seems confusing or maybe wrong, it's better 
 1. Set a [timer for 10 minutes](https://www.google.com/search?q=timer+for+10+minutes).
 1. Select `<main>` in the Elements panel
 1. Hover over the [ruleset](https://www.codecademy.com/learn/intro-to-css/modules/learn-css-selectors-visual-rules/cheatsheet) attached to main in the Styles panel.
-1. In yoour goup, discuss what you think the rules mean. Refer to documentation or experiment if you need hints.
+1. In your group, discuss what you think the rules mean. Refer to documentation or experiment if you need hints.
 1. Come back together as a large group.
 <!-- {{</note>}}-->
 
@@ -145,7 +145,7 @@ If something doesn't make sense, or seems confusing or maybe wrong, it's better 
 - [ ] Inspect the Accessibility Tree and compare it to the DOM
 ```
 
-So we've explored the Elements panel, the Styles panel, and the Lighthouse panel. There are many many more panels, and they all expose a different way of interpreting, interacting with, or understanding the same code. Computer systems frequently do this. It's a mistake to think that the way you use a website is the only way it can be used. Bots, crawlers, screenreaders, integrations... there are many and various consumers of your code, so it's important to make sure you construct it properly.
+So we've explored the Elements panel, the Styles panel, and the Lighthouse panel. There are many many more panels, and they all expose a different way of interpreting, interacting with, or understanding the same code. Computer systems frequently do this. It's a mistake to think that the way you use a website is the only way it can be used. Bots, crawlers, screen-readers, integrations... there are many and various consumers of your code, so it's important to make sure you construct it properly.
 
 For example, you have just looked in the Elements panel. This is not really your HTML, this is [the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), an API the browser builds using your HTML. An example of how the DOM is different from HTML is that JavaScript can change what's in the page - this changes the DOM, but doesn't change the actual HTML. The [DOM isn't the only API](https://developer.mozilla.org/en-US/docs/Web/API) it builds. Let's look at another one right now!
 
@@ -164,7 +164,7 @@ And that's it for today! We have covered a lot, but remember, as developers, we 
 
 ## More
 
-1. Inspect web pages as you use the internet. Do this _all the time_! What font does Youtube use? What about [CSS Tricks](https://css-tricks.com/tag/devtools/)? [Hackernews](https://news.ycombinator.com/) is still using tables - what's wrong with this?
+1. Inspect web pages as you use the internet. Do this _all the time_! What font does YouTube use? What about [CSS Tricks](https://css-tricks.com/tag/devtools/)? [Hackernews](https://news.ycombinator.com/) is still using tables - what's wrong with this?
 
 2. Try changing the style and content of some websites. Make your favourite website bright pink. Try adding a `contenteditable` attribute to an element and see what changes. Send a screenshot of something cool you changed to your cohort's Slack channel.
 
