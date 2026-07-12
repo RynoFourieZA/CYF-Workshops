@@ -1,22 +1,42 @@
-export function ProfilePreview(profile) {
-  const preview = document.createElement("aside");
+export function ProfilePreview(profile, options = { shortForm: false }) {
+  if (options.shortForm === false) {
 
-  const picture = document.createElement("img");
-  picture.src = profile.pictureSrc;
-  picture.alt = "";
-  picture.dataset.testid = "profilePicture";
+    const preview = document.createElement("aside");
 
-  const name = document.createElement("p");
-  name.textContent = profile.name;
-  name.dataset.testid = "profileName";
+    const picture = document.createElement("img");
+    picture.src = profile.pictureSrc;
+    picture.alt = "";
+    picture.dataset.testid = "profilePicture";
 
-  const bio = document.createElement("p");
-  bio.textContent = profile.bio;
-  bio.dataset.testid = "profileBio";
+    const name = document.createElement("p");
+    name.textContent = profile.name;
+    name.dataset.testid = "profileName";
 
-  preview.appendChild(picture);
-  preview.appendChild(name);
-  preview.appendChild(bio);
+    const bio = document.createElement("p");
+    bio.textContent = profile.bio;
+    bio.dataset.testid = "profileBio";
 
-  return preview;
+    preview.appendChild(picture);
+    preview.appendChild(name);
+    preview.appendChild(bio);
+
+    return preview;
+  } else if (options.shortForm === true) {
+    const preview = document.createElement("aside");
+
+    const picture = document.createElement("img");
+    picture.src = profile.pictureSrc;
+    picture.alt = "";
+    picture.dataset.testid = "profilePicture";
+
+    const name = document.createElement("p");
+    name.textContent = profile.name;
+    name.dataset.testid = "profileName";
+
+    preview.appendChild(picture);
+    preview.appendChild(name);
+
+    return preview;
+
+  }
 }
